@@ -2,7 +2,6 @@
 
 ## Contact
 Name: Sameera Sakinala 
-      02149444 
 
 Section:202
 
