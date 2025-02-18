@@ -1,0 +1,958 @@
+desc: (none)
+cmd: ./EDistance
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=5133753
+mem_heap_B=115203
+mem_heap_extra_B=85
+mem_stacks_B=0
+heap_tree=detailed
+n3: 115203 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4907939: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 38403 0x49A90BD: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n2: 38403 0x49253F4: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+   n0: 23042 0x10AA62: main (main.cpp:31)
+   n0: 15361 0x10AA4D: main (main.cpp:31)
+ n1: 4096 0x4B27BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B36CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B35CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x4B36D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x496F8C0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+      n1: 4096 0x497D9D5: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+       n1: 4096 0x4925166: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+        n0: 4096 0x10AA4D: main (main.cpp:31)
+#-----------
+snapshot=2
+#-----------
+time=8635933
+mem_heap_B=3447856
+mem_heap_extra_B=1664
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=13563033
+mem_heap_B=8288340
+mem_heap_extra_B=4084
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=20403929
+mem_heap_B=15009012
+mem_heap_extra_B=7444
+mem_stacks_B=0
+heap_tree=detailed
+n3: 15009012 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 14641464 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 14641464 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 14641464 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 14641464 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 14641464 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 14601460 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 14601460 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 14601460 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 14601460 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 14601460 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 14601460 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 14601460 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 14601460 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 14601460 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n1: 240024 0x10FDFA: __gnu_cxx::new_allocator<std::vector<int, std::allocator<int> > >::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 240024 0x10F681: std::allocator_traits<std::allocator<std::vector<int, std::allocator<int> > > >::allocate(std::allocator<std::vector<int, std::allocator<int> > >&, unsigned long) (alloc_traits.h:464)
+   n1: 240024 0x10ED15: std::_Vector_base<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 240024 0x10DC04: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:561)
+     n1: 240024 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+      n1: 240024 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+       n0: 240024 0x10AA9C: main (main.cpp:34)
+ n0: 127524 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=26919145
+mem_heap_B=21409652
+mem_heap_extra_B=10644
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=30991097
+mem_heap_B=25410052
+mem_heap_extra_B=12644
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=37709781
+mem_heap_B=32010712
+mem_heap_extra_B=15944
+mem_stacks_B=0
+heap_tree=detailed
+n2: 32010712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 31643164 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 31643164 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 31643164 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 31643164 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 31643164 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 31603160 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 31603160 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 31603160 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 31603160 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 31603160 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 31603160 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 31603160 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 31603160 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 31603160 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=45242993
+mem_heap_B=39411452
+mem_heap_extra_B=19644
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=50007149
+mem_heap_B=44091920
+mem_heap_extra_B=21984
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=56155857
+mem_heap_B=50132524
+mem_heap_extra_B=25004
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=61652965
+mem_heap_B=55533064
+mem_heap_extra_B=27704
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=66295069
+mem_heap_B=60093520
+mem_heap_extra_B=29984
+mem_stacks_B=0
+heap_tree=detailed
+n2: 60093520 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 59725972 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 59725972 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 59725972 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 59725972 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 59725972 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 59685968 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 59685968 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 59685968 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 59685968 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 59685968 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 59685968 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 59685968 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 59685968 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 59685968 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=70937061
+mem_heap_B=64653976
+mem_heap_extra_B=32264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=77126453
+mem_heap_B=70734584
+mem_heap_extra_B=35304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=83315877
+mem_heap_B=76815192
+mem_heap_extra_B=38344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=91052621
+mem_heap_B=84415952
+mem_heap_extra_B=42144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=96468345
+mem_heap_B=89736484
+mem_heap_extra_B=44804
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=101476877
+mem_heap_B=94656976
+mem_heap_extra_B=47264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=106851869
+mem_heap_B=99937504
+mem_heap_extra_B=49904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=112226861
+mem_heap_B=105218032
+mem_heap_extra_B=52544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=118945593
+mem_heap_B=111818692
+mem_heap_extra_B=55844
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=124279933
+mem_heap_B=117059216
+mem_heap_extra_B=58464
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=129654909
+mem_heap_B=122339744
+mem_heap_extra_B=61104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=135029901
+mem_heap_B=127620272
+mem_heap_extra_B=63744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=140404861
+mem_heap_B=132900800
+mem_heap_extra_B=66384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=145779901
+mem_heap_B=138181328
+mem_heap_extra_B=69024
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=151114193
+mem_heap_B=143421852
+mem_heap_extra_B=71644
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=155145397
+mem_heap_B=147382248
+mem_heap_extra_B=73624
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=160520373
+mem_heap_B=152662776
+mem_heap_extra_B=76264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=165895365
+mem_heap_B=157943304
+mem_heap_extra_B=78904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=170008113
+mem_heap_B=161983708
+mem_heap_extra_B=80924
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=174161513
+mem_heap_B=166064116
+mem_heap_extra_B=82964
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=180391605
+mem_heap_B=172184728
+mem_heap_extra_B=86024
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=184545037
+mem_heap_B=176265136
+mem_heap_extra_B=88064
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=188698405
+mem_heap_B=180345544
+mem_heap_extra_B=90104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=192811137
+mem_heap_B=184385948
+mem_heap_extra_B=92124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=196964537
+mem_heap_B=188466356
+mem_heap_extra_B=94164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=203194629
+mem_heap_B=194586968
+mem_heap_extra_B=97224
+mem_stacks_B=0
+heap_tree=detailed
+n2: 194586968 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 194219420 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 194219420 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 194219420 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 194219420 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 194219420 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 194179416 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 194179416 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 194179416 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 194179416 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 194179416 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 194179416 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 194179416 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 194179416 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 194179416 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=207348077
+mem_heap_B=198667376
+mem_heap_extra_B=99264
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=213537469
+mem_heap_B=204747984
+mem_heap_extra_B=102304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=221803537
+mem_heap_B=212868796
+mem_heap_extra_B=106364
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=230028953
+mem_heap_B=220949604
+mem_heap_extra_B=110404
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=234182353
+mem_heap_B=225030012
+mem_heap_extra_B=112444
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=238295053
+mem_heap_B=229070416
+mem_heap_extra_B=114464
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=244525129
+mem_heap_B=235191028
+mem_heap_extra_B=117524
+mem_stacks_B=0
+heap_tree=detailed
+n2: 235191028 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 234823480 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 234823480 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 234823480 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 234823480 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 234823480 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 234783476 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 234783476 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 234783476 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 234783476 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 234783476 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 234783476 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 234783476 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 234783476 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 234783476 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=248678529
+mem_heap_B=239271436
+mem_heap_extra_B=119564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=256903945
+mem_heap_B=247352244
+mem_heap_extra_B=123604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=261057345
+mem_heap_B=251432652
+mem_heap_extra_B=125644
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=269323413
+mem_heap_B=259553464
+mem_heap_extra_B=129704
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=272866057
+mem_heap_B=263033812
+mem_heap_extra_B=131444
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=276408685
+mem_heap_B=266514160
+mem_heap_extra_B=133184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=279951265
+mem_heap_B=269994508
+mem_heap_extra_B=134924
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=283493861
+mem_heap_B=273474856
+mem_heap_extra_B=136664
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=287036505
+mem_heap_B=276955204
+mem_heap_extra_B=138404
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=290579133
+mem_heap_B=280435552
+mem_heap_extra_B=140144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=294121745
+mem_heap_B=283915900
+mem_heap_extra_B=141884
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=297664325
+mem_heap_B=287396248
+mem_heap_extra_B=143624
+mem_stacks_B=0
+heap_tree=detailed
+n2: 287396248 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 287028700 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 287028700 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 287028700 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 287028700 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 287028700 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 286988696 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 286988696 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 286988696 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 286988696 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 286988696 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 286988696 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 286988696 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 286988696 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 286988696 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=301206953
+mem_heap_B=290876596
+mem_heap_extra_B=145364
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=304749581
+mem_heap_B=294356944
+mem_heap_extra_B=147104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=308292193
+mem_heap_B=297837292
+mem_heap_extra_B=148844
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=311834773
+mem_heap_B=301317640
+mem_heap_extra_B=150584
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=315377385
+mem_heap_B=304797988
+mem_heap_extra_B=152324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=318920045
+mem_heap_B=308278336
+mem_heap_extra_B=154064
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=322462641
+mem_heap_B=311758684
+mem_heap_extra_B=155804
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=326005221
+mem_heap_B=315239032
+mem_heap_extra_B=157544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=329547833
+mem_heap_B=318719380
+mem_heap_extra_B=159284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=333090493
+mem_heap_B=322199728
+mem_heap_extra_B=161024
+mem_stacks_B=0
+heap_tree=detailed
+n2: 322199728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 321832180 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 321832180 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 321832180 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 321832180 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 321832180 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 321792176 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 321792176 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 321792176 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 321792176 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 321792176 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 321792176 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 321792176 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 321792176 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 321792176 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=336633073
+mem_heap_B=325680076
+mem_heap_extra_B=162764
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=340175701
+mem_heap_B=329160424
+mem_heap_extra_B=164504
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=343718281
+mem_heap_B=332640772
+mem_heap_extra_B=166244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=347260941
+mem_heap_B=336121120
+mem_heap_extra_B=167984
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=350803521
+mem_heap_B=339601468
+mem_heap_extra_B=169724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=354346149
+mem_heap_B=343081816
+mem_heap_extra_B=171464
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=357888761
+mem_heap_B=346562164
+mem_heap_extra_B=173204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=361431421
+mem_heap_B=350042512
+mem_heap_extra_B=174944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=364973969
+mem_heap_B=353522860
+mem_heap_extra_B=176684
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=368516597
+mem_heap_B=357003208
+mem_heap_extra_B=178424
+mem_stacks_B=0
+heap_tree=detailed
+n2: 357003208 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 356635660 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 356635660 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 356635660 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 356635660 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 356635660 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 356595656 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 356595656 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 356595656 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 356595656 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 356595656 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 356595656 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 356595656 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 356595656 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 356595656 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=78
+#-----------
+time=372059209
+mem_heap_B=360483556
+mem_heap_extra_B=180164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=375601869
+mem_heap_B=363963904
+mem_heap_extra_B=181904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=379144449
+mem_heap_B=367444252
+mem_heap_extra_B=183644
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=382687077
+mem_heap_B=370924600
+mem_heap_extra_B=185384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=386229657
+mem_heap_B=374404948
+mem_heap_extra_B=187124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=389772317
+mem_heap_B=377885296
+mem_heap_extra_B=188864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=393314897
+mem_heap_B=381365644
+mem_heap_extra_B=190604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=396857525
+mem_heap_B=384845992
+mem_heap_extra_B=192344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=400400105
+mem_heap_B=388326340
+mem_heap_extra_B=194084
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=403942733
+mem_heap_B=391806688
+mem_heap_extra_B=195824
+mem_stacks_B=0
+heap_tree=detailed
+n2: 391806688 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 391439140 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 391439140 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 391439140 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 391439140 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 391439140 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 391399136 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 391399136 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 391399136 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 391399136 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 391399136 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 391399136 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 391399136 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 391399136 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 391399136 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=88
+#-----------
+time=407485345
+mem_heap_B=395287036
+mem_heap_extra_B=197564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=411027973
+mem_heap_B=398767384
+mem_heap_extra_B=199304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=412820045
+mem_heap_B=400487556
+mem_heap_extra_B=200164
+mem_stacks_B=0
+heap_tree=peak
+n2: 400487556 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 400120008 0x1101ED: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (new_allocator.h:127)
+  n1: 400120008 0x10FA45: std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (alloc_traits.h:464)
+   n1: 400120008 0x10F3A9: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (stl_vector.h:346)
+    n1: 400120008 0x10E8BC: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (stl_vector.h:361)
+     n2: 400120008 0x10D762: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (stl_vector.h:305)
+      n1: 400080004 0x1102A4: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:555)
+       n1: 400080004 0x1107D6: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (stl_construct.h:119)
+        n1: 400080004 0x10FCA4: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:237)
+         n1: 400080004 0x10F62D: std::vector<int, std::allocator<int> >* std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (stl_uninitialized.h:297)
+          n1: 400080004 0x10EBA9: std::vector<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (stl_uninitialized.h:410)
+           n1: 400080004 0x10DC54: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (vector.tcc:566)
+            n1: 400080004 0x10CFB5: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::resize(unsigned long, std::vector<int, std::allocator<int> > const&) (stl_vector.h:960)
+             n1: 400080004 0x10BEE6: EDistance::EDistance(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (EDistance.cpp:9)
+              n0: 400080004 0x10AA9C: main (main.cpp:34)
+      n0: 40004 in 1 place, below massif's threshold (1.00%)
+ n0: 367548 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=91
+#-----------
+time=42760789183
+mem_heap_B=400448065
+mem_heap_extra_B=200167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=92
+#-----------
+time=42767713561
+mem_heap_B=400545858
+mem_heap_extra_B=200190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=93
+#-----------
+time=42773500826
+mem_heap_B=400573198
+mem_heap_extra_B=200178
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=94
+#-----------
+time=127469582409
+mem_heap_B=400508685
+mem_heap_extra_B=200163
+mem_stacks_B=0
+heap_tree=empty
